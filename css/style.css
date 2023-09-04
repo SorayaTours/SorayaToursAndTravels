@@ -261,14 +261,14 @@ nav.main-menu {
     position: relative;
 }
 
-/* .gallery_blog .overlay {
+.gallery_blog .overlay {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
     background: rgba(250,62,25,.9);
-} */
+}
 
 
 .gallery_blog h2 {
@@ -593,9 +593,9 @@ button.main_bt a:hover { color: #fa3e19; }
   width: 100%;
 }
 
-/* .gallery_blog:hover .overlay {
+.gallery_blog:hover .overlay {
   opacity: 1;
-} */
+}
 
 
 
