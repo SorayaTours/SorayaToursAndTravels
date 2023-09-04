@@ -489,7 +489,9 @@ button.main_bt {
 button.main_bt a:hover { color: #fa3e19; }
 
 .map_section{
-	width: 100%;
+	max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
 	float: left;
 	padding-top: 90px;
 }
