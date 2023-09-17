@@ -488,13 +488,6 @@ button.main_bt {
 
 button.main_bt a:hover { color: #fa3e19; }
 
-.map_section{
-	max-width: 100%;
-    height: auto;
-    width: auto\9; /* ie8 */
-	float: left;
-	padding-top: 90px;
-}
 
 .contact_section{
 	width: 100%;
@@ -617,10 +610,21 @@ button.main_bt a:hover { color: #fa3e19; }
 .container:hover .overlay {
   opacity: 1;
 }
-
-#map {
+.map_section{
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+.map_section iframe,
+.map_section object,
+.map_section embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100%;
-    min-height: 480px;
 }
 
 .product_section_2 .images {
@@ -720,4 +724,68 @@ button.main_bt a:hover { color: #fa3e19; }
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 8px;
+}
+#map {
+  width: 100%;
+  height: 0;
+  padding-bottom: 35%; /* Ini adalah rasio aspek (Contoh: 4:3) */
+}
+body, html {
+    margin: 0;
+    padding: 0;
+  }
+
+  .p1 {
+    font-family: "Times New Roman", Times, serif;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.package {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+.package h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.price {
+    font-size: 18px;
+    color: #009688;
+}
+
+.description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.buy-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #009688;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.buy-button:hover {
+    background-color: #007b67;
+}
+.images_product {
+    max-width: 100%;
+  height: auto;
 }
