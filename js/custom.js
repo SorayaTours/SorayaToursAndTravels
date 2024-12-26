@@ -158,7 +158,7 @@ $(function () {
 	});
 
 	$(document).ready(function () {
-		$("#contact-form").validate({
+		$("contact.html-form").validate({
 			rules: {
 				firstname: "required",
 				email: {

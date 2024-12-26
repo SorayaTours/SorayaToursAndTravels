@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Soraya Tours And Travel</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style>
+        .container_form {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            z-index: 0;
+        }
+
+
+
+        .contact-info div:hover {
+            transform: scale(1.05);
+        }
+
+        .contact-info div i {
+            font-size: 40px;
+            color: #4CAF50;
+            margin-bottom: 15px;
+        }
+
+        .contact-info div h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .contact-info div p {
+            color: #777;
+            margin-bottom: 5px;
+    }
+
+        form {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        form input,
+        form textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        form textarea {
+            height: 150px;
+            resize: none;
+        }
+
+        form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+        }
+
+
+            .contact-info div {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+
+            form {
+                width: 90%;
+                margin-top: 30px;
+            }
+            .contact-info {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 20px;
+                padding: 20px;
+            }
+
+            .contact-info div {
+                width: 30%;
+                text-align: center;
+                padding: 20px;
+                background-color: #f9f9f9;
+                border-radius: 8px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+
+            .contact-info i {
+                font-size: 40px;
+                color: #333;
+                margin-bottom: 10px;
+            }
+
+            .contact-info h3 {
+                font-size: 18px;
+                margin-bottom: 5px;
+            }
+
+            .contact-info p {
+                font-size: 14px;
+                color: #777;
+            }
+
+            @media (max-width: 768px) {
+                .contact-info div {
+                    width: 100%; /* Elemen lebar penuh pada layar kecil */
+                    margin-bottom: 20px;
+                }
+            }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="layout_padding banner_section_start">
+            <!-- header inner -->
+            <div class="header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                            <div class="full">
+                                <div class="center-desk">
+                                    <div class="logo"><a href="#home"><img src="images/soraya-logo.png"
+                                                style="max-width: 50%;"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                            <div class="menu-area">
+                                <div class="limit-box">
+                                    <nav class="main-menu">
+                                        <ul class="menu-area-main">
+                                            <li><a href="index.html">Home</a></li>
+                                            <li><a href="about.html">About</a></li>
+                                            <li><a href="product.html">products</a></li>
+                                            <li><a href="gallery.html">gallery</a></li>
+                                            <li><a href="contact.html">Contact Us</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container_form">
+        <div class="contact-info">
+            <div>
+                <i class="fa fa-phone"></i>
+                <h3>Phone</h3>
+                <p>+6285162908267</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <h3>Email</h3>
+                <p>sorayatourstravel@gmail.com</p>
+            </div>
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <h3>Address</h3>
+                <p>Jalan Lingkar Tuktuk Kelurahan Tuktuk Siadong, Simanindo, Kabupaten Samosir, Sumatera Utara 22395</p>
+            </div>
+        </div>
+
+        <form>
+            <h2>Send Us a Message</h2>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Soraya Tours and Travels. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
