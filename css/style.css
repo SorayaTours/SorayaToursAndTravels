@@ -435,9 +435,9 @@ nav.main-menu {
 	float: left;
 	margin-top: 50px;
 }
-.images {
-    width: 100%!important;
-    margin-bottom: 20px;
+.imagess {
+    position: relative; /* Pastikan elemen gambar tidak menutupi tautan */
+    z-index: 1;
 }
 
 
@@ -712,18 +712,24 @@ button.main_bt a:hover { color: #fa3e19; }
     font-weight: 300;
     color: #999999;
 }
-.product_menu{
-    background-color: #04AA6D; /* Green */
-    border: none;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
+.product_menu {
     display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #04AA6D; /* Green */
+    color: white;
+    text-decoration: none;
+    text-align: center;
     border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 10;
+    pointer-events: auto;
+    position: relative;
+
+}
+.product_menu:hover {
+    background-color: #028a54; /* Darker green */
 }
 #map {
   width: 100%;
@@ -788,4 +794,13 @@ body, html {
 .images_product {
     max-width: 100%;
   height: auto;
+}
+.imagess img {
+    pointer-events: none; /* Membuat gambar tidak menutupi interaksi mouse */
+}
+header {
+    position: relative;
+    z-index: 10; /* Pastikan header di atas elemen lain */
+    padding-bottom: 20px; /* Memberikan ruang di bawah header */
+
 }
